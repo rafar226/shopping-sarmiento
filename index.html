@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071c2b">
+  <title>Sarmiento Shopping | Viví el encuentro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header" id="header">
+    <a class="brand" href="#inicio" aria-label="Sarmiento Shopping, inicio">
+      <span class="brand__mark">S</span><span class="brand__name">SARMIENTO<small>SHOPPING</small></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Navegación principal">
+      <a href="#experiencias">Experiencias</a><a href="#locales">Locales</a><a href="#cine">Cine</a><a href="#visitanos">Visitanos</a>
+    </nav>
+    <div class="header__actions">
+      <button class="search-btn" aria-label="Buscar" data-search><span>Buscar</span><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m16 16 4 4"/></svg></button>
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menú"><i></i><i></i></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <img class="hero__image" src="assets/hero-sarmiento.png" alt="Paseo gastronómico de Sarmiento Shopping al atardecer">
+      <div class="hero__veil"></div>
+      <div class="hero__content reveal">
+        <p class="eyebrow light">Resistencia · Chaco</p>
+        <h1>Donde todo<br><em>se encuentra.</em></h1>
+        <p class="hero__lead">Un lugar para descubrir, compartir y disfrutar. Tus marcas favoritas, nuevos sabores y grandes historias.</p>
+        <a class="btn btn--light" href="#experiencias">Descubrí Sarmiento <span>↗</span></a>
+      </div>
+      <div class="hero__weather"><span>26°</span><small>Ahora en<br>Resistencia</small></div>
+      <a class="hero__scroll" href="#experiencias"><span></span>Explorá</a>
+    </section>
+
+    <section class="intro section" id="experiencias">
+      <div class="intro__copy reveal">
+        <p class="eyebrow">Mucho más que un shopping</p>
+        <h2>Ese plan que<br>siempre queda <em>bien.</em></h2>
+      </div>
+      <p class="intro__text reveal">Cada visita puede convertirse en algo distinto. Una tarde de compras, una película, una cena o simplemente el gusto de encontrarnos.</p>
+      <div class="experience-grid">
+        <article class="feature feature--large reveal">
+          <img src="local.jfif" alt="Galería comercial">
+          <div class="feature__shade"></div><span class="feature__number">01</span>
+          <div class="feature__content"><p>Más de 90 propuestas</p><h3>Encontrá tu estilo</h3><a href="#locales">Ver todos los locales →</a></div>
+        </article>
+        <article class="feature reveal">
+          <img src="local2.jfif" alt="Propuesta gastronómica">
+          <div class="feature__shade"></div><span class="feature__number">02</span>
+          <div class="feature__content"><p>Sabores para compartir</p><h3>Una pausa deliciosa</h3><a href="#gastronomia">Descubrir gastronomía →</a></div>
+        </article>
+        <article class="feature reveal">
+          <img src="local3.jfif" alt="Experiencia de cine">
+          <div class="feature__shade"></div><span class="feature__number">03</span>
+          <div class="feature__content"><p>El cine se vive acá</p><h3>Grandes historias</h3><a href="#cine">Ver cartelera →</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="promo section">
+      <div class="promo__card reveal">
+        <div class="promo__copy"><span class="tag">Beneficio destacado</span><p>Todos los jueves</p><h2>Viví más.<br><em>Pagá menos.</em></h2><p class="promo__detail">Hasta 30% de ahorro y 3 cuotas sin interés con tarjetas seleccionadas.</p><a class="btn btn--dark" href="#">Conocé el beneficio <span>↗</span></a></div>
+        <div class="promo__art"><span class="promo__sun"></span><strong>30<sup>%</sup></strong><small>DE AHORRO</small></div>
+      </div>
+    </section>
+
+    <section class="stores section" id="locales">
+      <div class="section-head reveal"><div><p class="eyebrow">Todo en un solo lugar</p><h2>Tus marcas,<br><em>más cerca.</em></h2></div><a class="text-link" href="#">Explorar todos los locales ↗</a></div>
+      <div class="filters" role="group" aria-label="Filtrar locales">
+        <button class="active" data-filter="all">Todos</button><button data-filter="moda">Moda</button><button data-filter="gastronomia">Gastronomía</button><button data-filter="servicios">Servicios</button><button data-filter="entretenimiento">Entretenimiento</button>
+      </div>
+      <div class="store-grid" id="storeGrid"></div>
+    </section>
+
+    <section class="cinema section" id="cine">
+      <div class="cinema__heading reveal"><p class="eyebrow light">Cinemacenter · Cartelera ilustrativa</p><h2>Tu próxima<br><em>historia empieza acá.</em></h2><a class="btn btn--light" href="#">Ver cartelera completa <span>↗</span></a></div>
+      <div class="movie-strip" id="movieStrip"></div>
+    </section>
+
+    <section class="visit section" id="visitanos">
+      <div class="visit__top reveal"><div><p class="eyebrow">Tu lugar, todos los días</p><h2>Te esperamos<br>en <em>Sarmiento.</em></h2></div><p>Estamos en un punto estratégico de Resistencia, con todo lo que necesitás para disfrutar tu visita.</p></div>
+      <div class="visit__grid">
+        <div class="map-card reveal"><div class="map-lines"></div><span class="map-pin">S</span><div class="map-label"><strong>Av. Sarmiento 2610</strong><small>Resistencia, Chaco</small></div></div>
+        <div class="visit__info reveal">
+          <div><span>01</span><p>Locales comerciales</p><strong>Todos los días<br>10:00 a 22:00</strong></div>
+          <div><span>02</span><p>Patio de comidas</p><strong>Todos los días<br>10:00 a 00:00</strong></div>
+          <a class="btn btn--coral" href="https://maps.google.com" target="_blank" rel="noreferrer">Cómo llegar <span>↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__brand"><span class="brand__mark">S</span><span class="brand__name">SARMIENTO<small>SHOPPING</small></span></div>
+    <div><p>Explorá</p><a href="#locales">Locales</a><a href="#cine">Cine</a><a href="#gastronomia">Gastronomía</a><a href="#">Promociones</a></div>
+    <div><p>Conectá</p><a href="#">Instagram</a><a href="#">Facebook</a><a href="#">Contacto</a></div>
+    <div class="newsletter"><p>Enterate antes que nadie</p><form><input type="email" placeholder="Tu email" aria-label="Tu email"><button aria-label="Suscribirme">→</button></form></div>
+    <small class="footer__legal">© 2026 Sarmiento Shopping · Sitio conceptual</small>
+  </footer>
+
+  <div class="search-panel" id="searchPanel"><button data-search aria-label="Cerrar">×</button><p>¿Qué estás buscando?</p><input id="globalSearch" type="search" placeholder="Locales, gastronomía, servicios…"><div id="searchResults"></div></div>
+  <script src="script.js"></script>
+</body>
+</html>
