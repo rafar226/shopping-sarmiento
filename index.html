@@ -4,6 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#071c2b">
+
+  <link rel="stylesheet" href="https://beeasy-ai-widget.web.app/styles.css">
+  <script src="https://beeasy-ai-widget.web.app/polyfills.js" type="module"></script>
+  <script src="https://beeasy-ai-widget.web.app/runtime.js" type="module"></script>
+  <script src="https://beeasy-ai-widget.web.app/main.js" type="module"></script>
+
   <title>Sarmiento Shopping | Viví el encuentro</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,8 +18,8 @@
 </head>
 <body>
   <header class="header" id="header">
-    <a class="brand" href="#inicio" aria-label="Sarmiento Shopping, inicio">
-      <span class="brand__mark">S</span><span class="brand__name">SARMIENTO<small>SHOPPING</small></span>
+    <a class="brand brand--official" href="#inicio" aria-label="Sarmiento Shopping, inicio">
+      <img src="assets/logo-sarmiento.png" alt="Sarmiento Shopping">
     </a>
     <nav class="nav" id="nav" aria-label="Navegación principal">
       <a href="#experiencias">Experiencias</a><a href="#locales">Locales</a><a href="#cine">Cine</a><a href="#visitanos">Visitanos</a>
@@ -97,7 +103,7 @@
   </main>
 
   <footer class="footer">
-    <div class="footer__brand"><span class="brand__mark">S</span><span class="brand__name">SARMIENTO<small>SHOPPING</small></span></div>
+    <div class="footer__brand footer__brand--official"><img src="assets/logo-sarmiento.png" alt="Sarmiento Shopping"></div>
     <div><p>Explorá</p><a href="#locales">Locales</a><a href="#cine">Cine</a><a href="#gastronomia">Gastronomía</a><a href="#">Promociones</a></div>
     <div><p>Conectá</p><a href="#">Instagram</a><a href="#">Facebook</a><a href="#">Contacto</a></div>
     <div class="newsletter"><p>Enterate antes que nadie</p><form><input type="email" placeholder="Tu email" aria-label="Tu email"><button aria-label="Suscribirme">→</button></form></div>
@@ -106,5 +112,9 @@
 
   <div class="search-panel" id="searchPanel"><button data-search aria-label="Cerrar">×</button><p>¿Qué estás buscando?</p><input id="globalSearch" type="search" placeholder="Locales, gastronomía, servicios…"><div id="searchResults"></div></div>
   <script src="script.js"></script>
+
+  <chat-widget
+    workSpaceClientId="ZrM0YBLdtC8Y2j8z0U6I"
+  ></chat-widget>
 </body>
 </html>
